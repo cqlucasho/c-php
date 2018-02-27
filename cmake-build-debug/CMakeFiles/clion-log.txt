@@ -1,0 +1,4 @@
+/usr/local/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /opt/vendor/php/php-5.6.31/ext/ant_compile
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/vendor/php/php-5.6.31/ext/ant_compile/cmake-build-debug

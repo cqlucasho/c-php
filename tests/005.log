@@ -1,0 +1,6 @@
+
+---- EXPECTED OUTPUT
+ant extension is available
+---- ACTUAL OUTPUT
+Fatal error: Call to a member function query() on unknown in /opt/vendor/php/php-5.6.31/ext/ant_compile/tests/005.php on line 3
+---- FAILED

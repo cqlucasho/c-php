@@ -1,0 +1,28 @@
+ant.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/ant.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/ant.c -o ant.lo 
+ant_config.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/ant_config.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/ant_config.c -o ant_config.lo 
+ant_application.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/ant_application.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/ant_application.c -o ant_application.lo 
+app_controller.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/app_controller.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/app_controller.c -o app_controller.lo 
+cores/core.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/core.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/core.c -o cores/core.lo 
+cores/controller.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/controller.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/controller.c -o cores/controller.lo 
+cores/route.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/route.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/route.c -o cores/route.lo 
+cores/view.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/view.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/view.c -o cores/view.lo 
+cores/database.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/database.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/database.c -o cores/database.lo 
+cores/services.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/services.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/cores/services.c -o cores/services.lo 
+authorize/authorize.lo: /opt/vendor/php/php-5.6.31/ext/ant_compile/authorize/authorize.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/opt/vendor/php/php-5.6.31/ext/ant_compile $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /opt/vendor/php/php-5.6.31/ext/ant_compile/authorize/authorize.c -o authorize/authorize.lo 
+$(phplibdir)/ant.la: ./ant.la
+	$(LIBTOOL) --mode=install cp ./ant.la $(phplibdir)
+
+./ant.la: $(shared_objects_ant) $(ANT_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_ant) $(ANT_SHARED_LIBADD)
+

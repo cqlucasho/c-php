@@ -1,0 +1,8 @@
+
+---- EXPECTED OUTPUT
+ant extension is available
+---- ACTUAL OUTPUT
+hello_word_test_abc
+helloWordIndexAbc
+HelloWordIndexAbd
+---- FAILED

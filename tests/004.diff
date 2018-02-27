@@ -1,0 +1,2 @@
+001+ Fatal error: Call to a member function query() on unknown in /opt/vendor/php/php-5.6.31/ext/ant_compile/tests/004.php on line 3
+001- ant extension is available

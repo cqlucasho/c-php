@@ -1,0 +1,3 @@
+001+ /opt/vendor/php/php-5.6.31/ext/ant_compile/tests/
+001- ant extension is available
+002+ 1
