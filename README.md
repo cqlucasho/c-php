@@ -8,5 +8,8 @@ the framework is used to learning and test for all the developer
 2. Database Query API
 3. Security Authentication
 
+## document
+directory `docs`
+
 ## usage
-see docuement inside `php-usage-test` directory
+please look at the `php-usage-test` directory
