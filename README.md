@@ -9,4 +9,4 @@ the framework is used to learning and test for all the developer
 3. Security Authentication
 
 ## usage
-look at the `php-usage-test` directory
+see docuement inside `php-usage-test` directory
