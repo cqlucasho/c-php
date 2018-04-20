@@ -14,5 +14,5 @@ directory `docs`
 ## usage
 please look at the `php-usage-test` directory
 
-### notice `apps/test_module` code isn't worked in webServer, which code is exhibition.
+### notice: `apps/test_module` code isn't worked in webServer, which code is exhibition.
 
