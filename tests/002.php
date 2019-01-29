@@ -15,9 +15,9 @@ Ant\Config::initConfig(array(
 );
 
 Ant\Config::initDb(array(
-    'host'      => '121.41.6.126',
-    'user'      => 'qixin',
-    'password'  => 'IFUV1KqLYT^Rh$20',
+    'host'      => '127.0.0.1',
+    'user'      => 'test',
+    'password'  => 'test',
     'select_db' => 'qx_lotcode_1_5_dev',
     'charset'   => 'utf-8')
 );
